@@ -1,6 +1,6 @@
 = DESCRIPTION:
 
-manage ohai plugins 
+Ohai plugins to recognise windows programs and services.
 
 = ATTRIBUTES:
 ohai.plugins  =  array of files to push 
@@ -8,7 +8,4 @@ ohai.pligin_path = location to install them (this needs to be setup in your chef
 
 
 = REQUIREMENTS:
-need to setup your chef client recipie to slurp the plugins directory for chef to see it
-
-ex:
-Ohai::Config[:plugin_path] << "/etc/ohai/plugins"
+Need to be placed in the ohai cookbook under files/default/plugins
